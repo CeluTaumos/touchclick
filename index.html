@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TouchClick — Un click. Tu mente en calma. Accesorio sensorial portátil de La Infalible para concentración y alivio del nerviosismo.">
+  <title>TouchClick | Un click. Tu mente en calma.</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="home">
+
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="index.html" aria-label="TouchClick, volver al inicio">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="9" r="6"></circle>
+            <rect x="9.5" y="13" width="5" height="6" rx="2"></rect>
+            <path d="M12 7v3"></path>
+            <path d="M10.5 8.5h3"></path>
+          </svg>
+        </span>
+        <span class="brand__text">Touch<span>Click</span></span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="siteNav">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="siteNav">
+        <ul class="nav__list">
+          <li><a href="index.html#que-es">¿Qué es?</a></li>
+          <li><a href="index.html#beneficios">Beneficios</a></li>
+          <li><a href="index.html#kit">El Kit</a></li>
+          <li><a href="index.html#catalogo">Catálogo</a></li>
+          <li><a href="index.html#ods">ODS</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <button class="cart-btn" id="cartButton" aria-label="Abrir carrito de compras">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="9" cy="21" r="1.5"></circle>
+            <circle cx="19" cy="21" r="1.5"></circle>
+            <path d="M2 3h2.5l2.2 12.2a2 2 0 0 0 2 1.8h8.9a2 2 0 0 0 2-1.6L21 7H6"></path>
+          </svg>
+          <span class="cart-badge" id="cartBadge" hidden>0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero" id="inicio">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <p class="hero__tag">Proyecto estudiantil · La Infalible</p>
+          <h1 class="hero__title">Touch<span>Click</span></h1>
+          <p class="hero__slogan">Un click. Tu mente en calma.</p>
+          <p class="hero__lead">
+            Un accesorio sensorial portátil con switch mecánico y teclas intercambiables,
+            pensado para que estudies más concentrado y sueltes los nervios cuando más lo necesitás.
+          </p>
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="producto.html?id=1">Comprar ahora</a>
+            <a class="btn btn--ghost" href="#catalogo">Ver catálogo</a>
+          </div>
+        </div>
+
+        <div class="hero__demo" aria-label="Demostración interactiva del switch TouchClick">
+          <div class="switch-demo" id="switchDemo">
+            <button class="key" id="demoKey" type="button" aria-label="Presionar el switch para probarlo">
+              <span class="key__stem" aria-hidden="true"></span>
+              <span class="key__cap" aria-hidden="true">
+                <span class="key__face">TC</span>
+                <span class="key__led"></span>
+              </span>
+            </button>
+            <p class="switch-demo__hint">Presioná el switch y escuchá el click</p>
+            <p class="switch-demo__count" id="demoCount">Clicks: <strong>0</strong></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="que-es">
+      <div class="container">
+        <p class="section__eyebrow">Concepto</p>
+        <h2 class="section__title">¿Qué es TouchClick?</h2>
+        <p class="section__lead">
+          TouchClick es una banda flexible de silicona con un switch mecánico de teclas intercambiables y llavero.
+          Un pequeño estímulo táctil y sonoro que te ayuda a mantener el foco y liberar la tensión de los nervios,
+          dentro y fuera del aula.
+        </p>
+
+        <div class="benefits" id="beneficios">
+          <article class="benefit-card">
+            <span class="benefit-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M7 3h10a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"></path>
+                <path d="M9 7h6"></path><path d="M9 11h6"></path><path d="M10 15h4"></path>
+              </svg>
+            </span>
+            <h3>Respuesta táctil</h3>
+            <p>Un switch mecánico real con click audible y sensación táctil precisa, igual que un teclado.</p>
+          </article>
+
+          <article class="benefit-card">
+            <span class="benefit-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="4" r="2"></circle>
+                <path d="M12 6v10"></path>
+                <path d="M8 20c0-2 1.8-4 4-4s4 2 4 4"></path>
+                <circle cx="12" cy="20" r="2"></circle>
+              </svg>
+            </span>
+            <h3>Portabilidad</h3>
+            <p>Se lleva como una pulsera y con su llavero no te olvidás de estar tranquilo en ningún lado.</p>
+          </article>
+
+          <article class="benefit-card">
+            <span class="benefit-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 3a9 9 0 1 0 9 9"></path>
+                <path d="M12 8v5l3 2"></path>
+              </svg>
+            </span>
+            <h3>Calma y foco</h3>
+            <p>Un micro-movimiento repetitivo que ayuda a soltar la ansiedad y sostener la concentración.</p>
+          </article>
+
+          <article class="benefit-card">
+            <span class="benefit-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 20a8 8 0 1 0 0-16"></path>
+                <path d="M12 9l3 3-3 3"></path>
+                <path d="M3 5l5 3-2 5"></path>
+              </svg>
+            </span>
+            <h3>Uso sensorial recreativo</h3>
+            <p>Coleccioná keycaps, personalizá la tuya y convierte el descanso en un momento creativo.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tint" id="kit">
+      <div class="container kit">
+        <div class="kit__visual" aria-hidden="true">
+          <div class="device device--kit" id="kitDevice">
+            <span class="device__keycap">TC</span>
+            <span class="device__ring"></span>
+            <span class="device__tag"></span>
+          </div>
+        </div>
+        <div class="kit__content">
+          <p class="section__eyebrow">El Kit Inicial</p>
+          <h2 class="section__title">¿Qué incluye?</h2>
+          <p class="section__lead">Todo lo que necesitás para empezar a clickear en calma.</p>
+          <ul class="checklist">
+            <li>Banda flexible de silicona hipoalergénica</li>
+            <li>Switch mecánico con teclas intercambiables</li>
+            <li>Llavero metálico para llevarlo siempre</li>
+            <li>Teclas base de arranque</li>
+            <li>Tarjeta QR con contenido exclusivo</li>
+            <li>Regalo sorpresa incluido</li>
+          </ul>
+          <a class="btn btn--primary" href="producto.html?id=1">Armar mi TouchClick</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="catalogo">
+      <div class="container">
+        <p class="section__eyebrow">Catálogo</p>
+        <h2 class="section__title">Productos destacados</h2>
+        <p class="section__lead">Elegí tu próxima fuente de calma.</p>
+        <div class="catalog" id="catalogGrid">
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tint" id="ods">
+      <div class="container">
+        <p class="section__eyebrow">Compromiso</p>
+        <h2 class="section__title">Nos alineamos con los ODS</h2>
+        <p class="section__lead">
+          Sumamos nuestro granito de arena a los Objetivos de Desarrollo Sostenible de la ONU.
+        </p>
+        <div class="ods-grid">
+          <article class="ods-card">
+            <span class="ods-card__num" aria-hidden="true">3</span>
+            <h3>Salud y bienestar</h3>
+            <p>Cuidamos la concentración y acompañamos la gestión del estrés y la ansiedad cotidiana.</p>
+          </article>
+          <article class="ods-card">
+            <span class="ods-card__num" aria-hidden="true">9</span>
+            <h3>Industria, innovación e infraestructura</h3>
+            <p>Pequeña producción innovadora, creativa y hecha a escala local y responsable.</p>
+          </article>
+          <article class="ods-card">
+            <span class="ods-card__num" aria-hidden="true">12</span>
+            <h3>Producción y consumo responsables</h3>
+            <p>Componentes reutilizables, teclas intercambiables y consumo consciente.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <p class="footer__brand">Touch<span>Click</span></p>
+        <p class="footer__claim">Un click. Tu mente en calma.</p>
+        <p class="footer__org">Emprendimiento escolar <strong>La Infalible</strong></p>
+      </div>
+      <div>
+        <h4>Explorá</h4>
+        <ul class="footer__links">
+          <li><a href="#que-es">¿Qué es TouchClick?</a></li>
+          <li><a href="#catalogo">Catálogo</a></li>
+          <li><a href="#ods">Compromiso ODS</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Redes (simuladas)</h4>
+        <ul class="footer__links">
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">TikTok</a></li>
+          <li><a href="#">WhatsApp</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <p class="footer__contact">Feria escolar de La Infalible<br>
+        Isidro Casanova, La Matanza — Bs. As.</p>
+      </div>
+    </div>
+    <div class="container footer__note">
+      <p>Prototipo conceptual de un proyecto escolar sin fines de lucro final. TouchClick es un producto recreativo
+      de uso sensorial y no sustituye ninguna atención profesional.</p>
+      <p>&copy; 2026 La Infalible — TouchClick. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <div id="drawerRoot"></div>
+  <div id="toastRoot"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
