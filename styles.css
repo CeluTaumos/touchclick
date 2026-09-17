@@ -1588,12 +1588,16 @@ section {
   inset: 0;
   background: rgba(28, 37, 48, 0.5);
   opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
   z-index: 80;
   transition: opacity .25s ease;
 }
 
 .drop-overlay.show {
   opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
 
 .drawer {
@@ -1607,6 +1611,7 @@ section {
   z-index: 90;
   box-shadow: var(--shadow-lg);
   transform: translateX(100%);
+  visibility: hidden;
   transition: transform .3s ease;
   display: flex;
   flex-direction: column;
@@ -1614,6 +1619,7 @@ section {
 
 .drawer.open {
   transform: translateX(0);
+  visibility: visible;
 }
 
 .drawer__header {
